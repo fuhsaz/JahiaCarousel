@@ -1,0 +1,24 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[jnt:carousel] > jnt:content, jmix:droppableContent, mix:title
+ - jcr:title (string)
+ - items (decimal, text)
+ - id (decimal, text)
+ - autoPlay (boolean)
+ - autoPlayTime (decimal, text)
+ - singleItem (boolean)
+ - navigation (boolean)
+ - pagination (boolean)
+ - paginationNumbers (boolean)
+ - rewindNav (boolean)
+
+[jnt:carouselImage] > jnt:content, mix:title, jmix:droppableContent
+ - image (weakreference, picker[type='image'])
+
+[jnt:carouselText] > jnt:content, mix:title, jmix:droppableContent
+ - text (string, textarea)
+ - quoteAuthor (string)
+ - jcr:title (string)
+
