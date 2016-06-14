@@ -14,11 +14,3 @@
  - paginationNumbers (boolean)
  - rewindNav (boolean)
 
-[jnt:carouselImage] > jnt:content, mix:title, jmix:droppableContent
- - image (weakreference, picker[type='image'])
-
-[jnt:carouselText] > jnt:content, mix:title, jmix:droppableContent
- - text (string, textarea)
- - quoteAuthor (string)
- - jcr:title (string)
-
