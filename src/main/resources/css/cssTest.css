@@ -1,0 +1,12 @@
+#demo .item{
+	margin:3px;
+}
+#demo .item img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+p {
+  border-style:solid;
+  border-color:red;
+}

@@ -1,0 +1,30 @@
+.carouselMain{
+  margin:20px auto;
+}
+.carousel-text{
+  font-size:14pt;
+}
+.carouselTextAuthor{
+  text-align:right;
+  margin-right:40px;
+}
+.carouselTextText{
+  margin:20px;  
+}
+.carouselTextQuote{
+  margin:20px;
+  font-style:italic;
+}
+.carouselTextTitle{
+  font-size:16pt;
+  font-weight:bold;
+  text-align:center;
+}
+.hiddenVars{
+  display:none;
+}
+.item img {
+  display:block;
+  width:100%;
+  height:auto;
+}
