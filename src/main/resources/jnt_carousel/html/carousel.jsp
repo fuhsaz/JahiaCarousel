@@ -30,7 +30,7 @@
 <c:if test="${renderContext.editMode}">
   <template:module path="*"/>
   
-  <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:carouselImage')}" var="curNode">
+  <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:carimage')}" var="curNode">
     <c:set var="pic" value="${curNode.properties['Image']}"/>
     <c:url value="${pic.node.url}" var="imgUrl"></c:url>
     <div class="editItem">
@@ -38,7 +38,7 @@
     </div>
   </c:forEach>
   
-  <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:carouselText')}" var="currentNode">
+  <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:cartext')}" var="currentNode">
     <div class="editItem carousel-text">
       <c:if test="${not empty currentNode.properties['title']}">
         <span class="carouselTextTitle">${currentNode.properties['title'].string}</span><br/>

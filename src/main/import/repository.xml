@@ -13,6 +13,20 @@
                     <src jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                         <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                             <resources jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
+                                <jnt_carimage jcr:mixinTypes="jmix:sourceControl"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:sourceControl"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <carimage.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_carimage>
+                                <jnt_carousel jcr:mixinTypes="jmix:sourceControl"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:sourceControl"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <carousel.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_carousel>
                                 <META-INF jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:metaInfFolder">
                                     <definitions.cnd jcr:mixinTypes="jmix:sourceControl"
                                          jcr:primaryType="jnt:definitionFile"/>
