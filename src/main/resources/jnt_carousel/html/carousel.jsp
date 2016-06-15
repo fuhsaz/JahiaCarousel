@@ -29,9 +29,8 @@
 
 <c:if test="${renderContext.editMode}">
   <template:module path="*"/>
-  
   <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:carimage')}" var="curNode">
-    <c:set var="pic" value="${curNode.properties['Image']}"/>
+    <c:set var="pic" value="${curNode.properties['image']}"/>
     <c:url value="${pic.node.url}" var="imgUrl"></c:url>
     <div class="editItem">
       <img src="${imgUrl}"/>
@@ -133,7 +132,7 @@
   </div>
   <div class="owl-carousel carouselMain" id="${uniqueID}">
     <c:forEach items="${jcr:getChildrenOfType(currentNode, 'jnt:carouselImage')}" var="curNode">
-      <c:set var="pic" value="${curNode.properties['Image']}"/>
+      <c:set var="pic" value="${curNode.properties['image']}"/>
       <c:url value="${pic.node.url}" var="imgUrl"></c:url>
       <div class="item">
         <img src="${imgUrl}" class="carouselImage"/>

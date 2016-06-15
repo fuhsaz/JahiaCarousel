@@ -3,6 +3,8 @@
 <mix = 'http://www.jcp.org/jcr/mix/1.0'>
 
 [jnt:carousel] > jnt:content, jmix:droppableContent, mix:title
+ + * (jnt:carimage)
+ + * (jnt:cartext) 
  - jcr:title (string)
  - items (decimal, text)
  - id (decimal, text)
@@ -13,8 +15,6 @@
  - pagination (boolean)
  - paginationNumbers (boolean)
  - rewindNav (boolean)
- + * (jnt:carimage)
- + * (jnt:cartext)
 
 [jnt:carimage] > jnt:content
  - title (string)
